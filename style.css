@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Architects+Daughter&family=Bebas+Neue&family=Cinzel:wght@400;700;800&family=Courgette&family=Festive&family=Josefin+Sans:ital,wght@1,300&family=Lobster&family=Patrick+Hand&family=Satisfy&family=Zen+Old+Mincho:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Architects+Daughter&family=Bebas+Neue&family=Cinzel:wght@400;700;800&family=Courgette&family=Festive&family=Josefin+Sans:ital,wght@1,300&family=Lobster&family=PT+Sans+Narrow&family=Patrick+Hand&family=Satisfy&family=Zen+Old+Mincho:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*page 1*/
+.navbar {
+    background-color: rgb(192, 152, 120);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar-itme {
+    display: inline-block;
+    height: 50px;
+    width: 8rem;
+    text-align: center;
+    transition: 0.5s;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 25px;
+}
+
+.navbar-link { 
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.navbar-list i {
+    filter: invert(1);
+}
+
+.navbar-itme a:hover {
+    background-color: white;
+    color:rgb(99, 48, 0);
+    transition: 0.5s;
+    padding: 6px;
+}
+
+.logo h3 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("./pexels-karolina-grabowska-4199098.jpg") no-repeat center center / cover;
+}
+
+.showcase h1 {
+    text-align: center;
+    font-size: 89px;
+    color: rgb(99, 48, 0);
+    font-family: 'Zen Old Mincho', serif;
+    padding-bottom: 50px;
+}
+
+.line {
+    background-color: rgb(192, 152, 120);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.line img {
+    height: 40%;
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.texts h1 {
+    margin: 30px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.texts p {
+    margin: 30px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+}
+
+.texts a {
+    background-color: white;
+    color: rgb(196, 119, 68);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.texts a:hover {
+    background-color: rgb(235, 206, 180);
+    transition: 1.3s;
+}
+
+.home-card {
+    background: url("/pexels-karolina-grabowska-4705933.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.card {
+    background: transparent;
+}
+
+.card h5 {
+    color: rgb(99, 48, 0);
+    text-align: center;
+    font-size: 25px;
+}
+
+.card p {
+    text-align: center;
+    color: rgb(61, 29, 2);
+    font-size: 18px;
+}
+
+.cards {
+    padding: 90px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    border: 3px solid rgb(212, 198, 180);
+}
+
+.card img:hover {
+    background-color: white;
+    opacity: 0.3;
+    transform: translateY(-12px);
+    transition: 1.5s;
+}
+
+.dov {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dov h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    color: rgb(102, 48, 5);
+}
+
+.dov p {
+    color: rgb(110, 65, 22);
+}
+
+.dov a {
+    background-color: rgb(192, 152, 120);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 12px;
+}
+
+.dov a:hover {
+    background-color: white;
+    transition: 1.3s;
+}
+
+.contacts {
+    background-color: rgb(192, 152, 120);
+    height: 300px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    padding: 20px;
+    filter: invert(1);
+}
+
+.contact:hover {
+    transition: 1.5s;
+    transform: translateX(18px);
+}
+
+.call {
+    filter: invert(1);
+    padding-left: 50px;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.call1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.call2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*page2*/
+
+body {
+    background: url("./pexels-karolina-grabowska-4705933.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Abel', sans-serif;
+    line-height: 1.6;
+}
+
+.list-menu {
+    font-size: 40px;
+    color: rgb(99, 48, 0);
+    text-align: center;
+}
+
+.menu {
+    background-color: rgba(199, 140, 89, 0.2);
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.menu-1 img {
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+}
+
+.menu-1 img:hover {
+    background-color: rgb(168, 107, 28);
+    opacity: 0.5;
+    transform: translateX(12px);
+    transition: 1.5s;
+}
+
+.menu-2 {
+    display: flex;
+    flex-direction: column;
+    
+    color: rgb(94, 58, 29);
+}
+
+.menu-2 h3{
+    font-size: 20px;
+}
+
+.menu-2 p {
+    font-size: 18px;
+}
+
+.menu-2 button {
+    background-color: rgb(155, 132, 114);
+    width: 100px;
+    padding: 8px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: rgb(61, 29, 2);
+}
+
+.menu-2 button:hover {
+    color: white;
+    transition: 0.8s;
+    opacity: 0.1;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(99, 48, 0);
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Choice {
+    background-color: rgba(199, 140, 89, 0.2);
+    margin: 100px;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose {
+    font-size: 40px;
+    color: rgb(99, 48, 0);
+    text-align: center;
+}
+
+/*page3 */
+
+.location {
+    background-color: rgba(199, 140, 89, 0.2);
+    margin: 100px;
+    position: relative;
+}
+
+.location-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.location-1 img {
+    width: 60%;
+    opacity: 0.8;
+    border: 3px solid rgb(155, 132, 114);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.location-1 img:hover {
+    transition: 1.5s;
+    transform: translateX(12px);
+}
+
+.location a {
+    text-decoration: none;
+    color: rgb(94, 58, 29);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(192, 152, 120);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.location a:hover {
+    transition: 1.5s;
+    transform: translateX(-12px);
+}
+
+.total-2 {
+    font-size: 40px;
+    color: rgb(94, 58, 29);
+    text-align: center;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.total-2 p {
+    color: rgb(94, 58, 29);
+}
